@@ -1,0 +1,45 @@
+.heading-banner {
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(rgba(238, 140, 229, 0.5),rgba(248, 244, 244,0.5));
+    padding: 15px;
+}
+
+.table-container {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.table-contents {
+    width: 100%;
+}
+
+thead {
+    color: black;
+    background-color: rgba(138, 43, 226, 0.5);
+    text-align: center;
+}
+
+thead tr th {
+    padding: 10px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+tbody {
+ background-color: rgba(255, 255, 0, 0.25);
+ color: black;
+ text-align: left;
+}
+
+tbody tr th {
+    padding-right: 40px;
+    padding-left: 10px;
+    width: 30%;
+}
+
+.code-font {
+    font-family: monospace;
+    background-color: rgb(233, 233, 219);
+}
