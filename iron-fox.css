@@ -1,0 +1,267 @@
+html {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.35rem;
+}
+
+/* nav bar*/
+
+.fox-header-container {
+    width: 100%;
+    margin: auto;
+    font-size: 1.35rem;
+}
+.fox-contents-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+
+.fox-nav-bar li {
+    display: inline;
+    padding: 10px;
+}
+
+.fox-nav-bar a {
+    color:black;
+    text-decoration: none;
+}
+
+.fox-header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.fox-header-logo h1 {
+    display: inline;
+    text-transform: uppercase;
+}
+.fox-header-logo img {
+    width: 100px;
+    height: auto;
+    padding: 10px;
+}
+
+
+
+/* A title and logo or splash image */
+
+.splash {
+    background-image: url(./resources/images/gym_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.inside-container img {
+    max-width: 1000px;
+    width:100%;
+    height: auto;
+
+}
+
+
+/* A mission statement or brief description of the company */
+
+.about-section-container {
+    display:flex;
+    width: 100%;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+
+.about-image-container {
+    background-image: url(./resources/images/dumbbells.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 450px;
+    height: 500px;
+}
+
+.about-info-container {
+    background-color: #D75C16;
+    width: 450px;
+    max-height: 500px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-heading {
+    
+}
+
+.about-paragraph {
+    width: 60%;
+}
+
+/* A list or set of images and titles representing the product or products of the company*/
+
+.products-container {
+    display:flex;
+    width:100%;
+    margin:auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    
+}
+
+.product {
+    width: 350px;
+    height: 500px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.online {
+    background-image: url(./resources/images/online-training.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.product-heading {
+    background-color: hsla(0, 0%, 0%, 0.75);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    width: 75%;
+    border-radius: 10%;
+    padding: 10%;
+}
+
+.mid {
+    background-color: black;
+}
+.mid-heading {
+    font-size: 3rem;
+    text-align: center;
+    width: 75%;
+    text-transform: uppercase;
+    color:#D75C16;
+}
+
+.in-person {
+    background-image: url(./resources/images/1-1-training.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.product-button {
+    width: 100%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+
+}
+
+.product-button button {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    border-radius: 15px;
+    width: 140px;
+    height: 80px;
+    background-color: #D75C16;
+    color:black;
+    font-weight: 700;
+    border: 4px solid black;
+}
+
+
+/* A section for testimonials */
+
+.reviews-container {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    background-color: black;
+    color: white;    
+}
+
+.reviews-header {
+    text-align: center;
+}
+
+.clients-container {
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    justify-content: space-around;
+    align-content: center;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.reviews {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 450px;
+    overflow: scroll;
+    margin: 3% 0;
+    box-sizing: border-box;
+}
+
+.reviews p {
+    height: 80%;
+    width: 80%;
+    margin:auto;
+    padding: 5%;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.reviews .review-name {
+    text-align: right;
+    font-weight: 500;
+    font-size: 1.75rem;
+    font-style: normal;
+}
+
+.review-name::before {
+    content: "\2014\0020";
+}
+.quotation::before {
+    content: "\201c";
+    color: #D75C16;
+    font-size: 5rem;
+    font-weight: 600;
+    display:block;
+    margin-bottom: -40px;
+    margin-top: -20px;
+
+}

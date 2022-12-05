@@ -5,9 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cheatsheet</title>
-    <link rel="stylesheet" href="/css-cheatsheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css-cheatsheet.css">
+    <link rel="stylesheet" href="./resources/css/nav-bar.css">
 </head>
 <body>
+    <!-- portfolio nav bar-->
+
+  <header class ="header-container">
+    <div class="header-contents-container">
+      <div class ="header-logo">
+        <h1>Clara Nimmo</h1>
+      </div>
+      <div class ="nav-bar">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./iron-fox.html">Iron-Fox</a></li>
+            <li><a href="./css-cheatsheet.html"><strong>Cheatsheet</strong></a></li>
+            <li><a href="./tea-cozy.html">Tea Cozy</a></li>
+          </ul>
+      </div>
+    </div>
+  </header>
+
     <div class="heading-banner">
         <h1>Common CSS Properties</h1>
     </div>
@@ -119,6 +141,26 @@
                 <tr>
                     <th>Button styling, flat and skeuomorphic</th>
                     <td><span class="code-font">.answer:hover {<br>background-color: #C0D6DF; }<br>.answer:active {<br>color: #ffffff; }</span><br>This is an example of a flat button styling where color changes happen when hovering over a button and pressing it.<br>skeuomorphic styling gives a 3D appearance and changes to box-shadow and margin can give the appearance of the button moving down when being pressed.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div><div class="table-container">
+        <table class="table-contents">
+            <thead>
+                <tr>
+                    <th colspan="2">FLEXBOX</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3" class="column-1">Flex</th>
+                    <td><span class="code-font">div {<br>display: flex; }</span><br>Makes an element a flex container, that is full width of its parent. <br>Items contained within this container are called flex items. The size and position of the flex items change in response to changing the size and position of the flex container.</td>
+                </tr>
+                <tr>
+                    <td><span class="code-font">div {<br>display: flex;<br>justify-content: center; }</span><br>This changes the distribution of space around the content. this is for when the content does not fill all the available space horizontally.<br><span class="code-font">center<br>flex-start<br>flex-end<br>space-between<br>space-around</span><br>are all values of justify-content.</td>
+                </tr>
+                <tr>
+                    <td><span class="code-font"></span><br></td>
                 </tr>
             </tbody>
         </table>

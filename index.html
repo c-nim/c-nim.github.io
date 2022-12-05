@@ -1,10 +1,67 @@
-<html>
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clara's Portfolio</title>
+  <link rel="stylesheet" href="./resources/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./resources/css/nav-bar.css">
+</head>
 <body>
-  <h1>Clara Nimmo</h1>
-  <p>Welcome in to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-  <a href="/css-cheatsheet.html" title="Css cheat sheet link">CSS cheatsheet</a>
+  <!-- nav bar-->
+
+  <header class ="header-container">
+    <div class="header-contents-container">
+      <div class ="header-logo">
+        <h1>Clara Nimmo</h1>
+      </div>
+      <div class ="nav-bar">
+          <ul>
+            <li><a href="./index.html"></a><strong>Home</strong></li>
+            <li><a href="./iron-fox.html">Iron-Fox</a></li>
+            <li><a href="./css-cheatsheet.html">Cheatsheet</a></li>
+            <li><a href="./tea-cozy.html">Tea Cozy</a></li>
+          </ul>
+      </div>
+    </div>
+  </header>
+
+<!--A title page/ splash image.-->
+  <div class= "splash">
+    <div class="inside-container">
+      <h2>Welcome in,<br>take a look around.</h2>
+      <p>Self employed as a personal trainer for over 5 years, working hard and caring about my work has never been an issue. A passion sparked from building a website in Wix led me to start learning programming in Codecademy. I would consider myself very adaptable and hard working and would love the chance to further my career as a programmer.<br><br>What I lack in experience, I make up for in drive and enthusiasm.</p>
+    </div>
+  </div>
+
+<!--list of portfolio pages-->
+
+  <div class="portfolio-header-box">
+    <div class="portfolio-header">
+      <h3>Portfolio</h3>
+      <p>Have a look at some of the pieces I have completed so far.</p>
+    </div>
+  </div>
+
+  <div class="portfolio-container ">
+    <a href="./iron-fox.html">
+      <div class="portfolio-piece fox"></div>
+    </a>
+    <a href="./tea-cozy.html">
+      <div class="portfolio-piece tea"></div>
+    </a>
+    <a href="./css-cheatsheet.html">
+      <div class="portfolio-piece cheat"></div>
+    </a>    
+  </div>
+  <footer class="footer">
+    <p>c.nim.dev@gmail.com</p>
+  </footer>
+
 </body>
- 
 </html>
+ 

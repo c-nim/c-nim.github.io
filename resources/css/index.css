@@ -1,0 +1,116 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(248, 245, 245);
+}
+
+h2{
+    font-family: 'Abril Fatface', cursive;
+}
+
+h3,
+p,
+a {
+    font-family: 'Lato', sans-serif;  
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+  /* A title and logo or splash image */
+
+  .splash {
+    background-image: url(../images/computer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    width: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.inside-container {
+    display:flex;
+    max-width: 750px;
+    width:100%;
+    height: auto;
+    background-color: hsla(0, 0%, 0%, 0.75);
+    color: rgb(224, 223, 231);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.inside-container h2 {
+    font-size: 4rem;  
+}
+
+.inside-container p {
+    padding: 0 10% 10%;
+    font-size: 1.5rem;
+}
+
+/* portfolio pieces */
+
+.portfolio-header-box {
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+}
+
+.portfolio-header h3 {
+    margin-bottom: -5px;
+}
+.portfolio-header p {
+    margin-bottom: 30px;
+}
+
+.portfolio-container {
+    display:flex;
+    width:100%;
+    margin:auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;  
+}
+
+.portfolio-piece {
+    margin: 3%;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    border: 5px solid black;
+}
+
+.fox {
+    background-image: url(../images/pf-ironfox.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tea {
+    background-image: url(../images/pf-teacozy.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cheat {
+    background-image: url(../images/pf-cheatsheet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* footer */
+
+.footer {
+    text-align: right;
+    padding: 5%;
+}
