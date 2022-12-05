@@ -27,7 +27,7 @@ h3 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 700px;
+    min-height: 700px;
     width: auto;
     display: flex;
     justify-content: end;
