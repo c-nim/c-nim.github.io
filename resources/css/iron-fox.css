@@ -61,7 +61,7 @@ p {
 /* A title and logo or splash image */
 
 .splash {
-    background-image: url(./resources/images/gym_background.jpg);
+    background-image: url(../images/gym_background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -93,7 +93,7 @@ p {
 }
 
 .about-image-container {
-    background-image: url(./resources/images/dumbbells.jpg);
+    background-image: url(../images/dumbbells.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -143,7 +143,7 @@ p {
 }
 
 .online {
-    background-image: url(./resources/images/online-training.jpg);
+    background-image: url(../images/online-training.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -171,7 +171,7 @@ p {
 }
 
 .in-person {
-    background-image: url(./resources/images/1-1-training.jpg);
+    background-image: url(../images/1-1-training.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
