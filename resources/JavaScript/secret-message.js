@@ -40,6 +40,7 @@ function colorOnEvent(letter) {
     }
 
 // ------- SECRET MESSAGE ------
+
 //turn boxes into variables
 let boxOne = document.getElementById('box-1');
 let boxTwo = document.getElementById('box-2');
@@ -47,9 +48,7 @@ let boxThree = document.getElementById('box-3');
 let boxFour = document.getElementById('box-4');
 let boxFourText = document.getElementById('box-4-text');
 let boxFive = document.getElementById('box-5');
-//let boxSix = document.getElementById('box-6');
 let boxSixText = document.getElementById('box-6-text');
-//let boxSeven = document.getElementById('box-7');
 let boxSevenText = document.getElementById('box-7-text');
 let resetButton = document.getElementById('reset');
 
@@ -87,3 +86,75 @@ function reset() {
 }
 
 resetButton.addEventListener('click', reset)
+
+// ------- ROCK, PAPER, SCISSORS ------
+
+//get computer result
+
+    function getCompResult() {
+        let compResult = Math.floor(Math.random()* 3);
+        if (compResult === 0) {
+            compResult = 'rock'
+        } else if (compResult === 1) {
+            compResult = 'paper'
+        } else {compResult = 'scissors'}
+        return compResult
+    }
+
+    let pickRock = document.getElementById('rock-button')
+    let pickPaper = document.getElementById('paper-button')
+    let pickScissors = document.getElementById('scissors-button')
+    let gameContainer = document.getElementById('game-container')
+    let winContainer = document.getElementById('win-container')
+    let loseContainer = document.getElementById('lose-container')
+    
+    //get player result
+    let playerResult = ''
+
+    pickRock.addEventListener('click', function(){
+        playerResult ='rock';
+        showResult();
+    })
+    pickPaper.addEventListener('click', function(){
+        playerResult = 'paper';
+        showResult();
+    })
+    pickScissors.addEventListener('click', function(){
+        playerResult = 'scissors';
+        showResult();
+    })
+    
+
+    //function to determine gameResult
+
+    function getGameResult () {
+        let gameResult = ''
+        let compResult = getCompResult()
+        if (playerResult === compResult) {
+            gameResult = 'draw'
+        } else if (playerResult === 'scissors' && compResult === 'paper'){
+            gameResult = 'win'
+        } else if (playerResult === 'paper' && compResult === 'rock'){
+            gameResult = 'win'
+        } else if (playerResult === 'rock' && compResult === 'scissors'){
+            gameResult = 'win'
+        } else {gameResult = 'lose'}
+        console.log(gameResult)    
+        return gameResult  
+
+    }
+    
+    //function to use gameResult to show the result at end
+
+    function showResult() {
+        let gameResult = getGameResult();
+        gameContainer.style.display = 'none';
+        if (gameResult === 'win' || gameResult === 'draw') {
+            winContainer.style.display = 'flex';
+            winContainer.style.backgroundColor = 'blue';
+        } else { loseContainer.style.display = 'flex'}
+    }
+    
+    
+
+    
