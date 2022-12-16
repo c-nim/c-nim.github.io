@@ -153,7 +153,6 @@ resetButton.addEventListener('click', reset)
         gameContainer.style.display = 'none';
         if (gameResult === 'win' || gameResult === 'draw') {
             winContainer.style.display = 'flex';
-            winContainer.style.backgroundColor = 'blue';
             for (let i= 0; i < displayResults.length; i++) {
                 console.log('P is working');
                 displayResults[i].innerHTML = `You played ${playerResult} and the computer played ${compResult}.`;
