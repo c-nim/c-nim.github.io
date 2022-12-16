@@ -107,8 +107,9 @@ resetButton.addEventListener('click', reset)
     let gameContainer = document.getElementById('game-container')
     let winContainer = document.getElementById('win-container')
     let loseContainer = document.getElementById('lose-container')
-    let resetGame = document.getElementsByClassName('resetGameButton')
-    
+    let resetGame = document.getElementsByClassName('reset-game-button')
+    let displayResults = document.getElementsByClassName('display-results')
+
     //get player result
     let playerResult = ''
 
@@ -128,9 +129,8 @@ resetButton.addEventListener('click', reset)
 
     //function to determine gameResult
 
-    function getGameResult () {
+    function getGameResult (compResult) {
         let gameResult = ''
-        let compResult = getCompResult()
         if (playerResult === compResult) {
             gameResult = 'draw'
         } else if (playerResult === 'scissors' && compResult === 'paper'){
@@ -148,11 +148,16 @@ resetButton.addEventListener('click', reset)
     //function to use gameResult to show the result at end
 
     function showResult() {
-        let gameResult = getGameResult();
+        let compResult = getCompResult()
+        let gameResult = getGameResult(compResult);
         gameContainer.style.display = 'none';
         if (gameResult === 'win' || gameResult === 'draw') {
             winContainer.style.display = 'flex';
             winContainer.style.backgroundColor = 'blue';
+            for (let i= 0; i < displayResults.length; i++) {
+                console.log('P is working');
+                displayResults[i].innerHTML = `You played ${playerResult} and the computer played ${compResult}.`;
+            };
             for (let i= 0; i < resetGame.length; i++) {
                 resetGame[i].style.display = 'block'
             }
@@ -160,6 +165,10 @@ resetButton.addEventListener('click', reset)
         } else { loseContainer.style.display = 'flex';
             for (let i= 0; i < resetGame.length; i++) {
             resetGame[i].style.display = 'block'};
+            for (let i= 0; i < displayResults.length; i++) {
+                console.log('P is working');
+                displayResults[i].innerHTML = `You played ${playerResult} and the computer played ${compResult}.`;
+            };
     }
 }
     
