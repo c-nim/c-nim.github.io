@@ -107,6 +107,7 @@ resetButton.addEventListener('click', reset)
     let gameContainer = document.getElementById('game-container')
     let winContainer = document.getElementById('win-container')
     let loseContainer = document.getElementById('lose-container')
+    let resetGame = document.getElementsByClassName('resetGameButton')
     
     //get player result
     let playerResult = ''
@@ -152,9 +153,32 @@ resetButton.addEventListener('click', reset)
         if (gameResult === 'win' || gameResult === 'draw') {
             winContainer.style.display = 'flex';
             winContainer.style.backgroundColor = 'blue';
-        } else { loseContainer.style.display = 'flex'}
+            for (let i= 0; i < resetGame.length; i++) {
+                resetGame[i].style.display = 'block'
+            }
+            //resetGame.style.display = 'block';
+        } else { loseContainer.style.display = 'flex';
+            for (let i= 0; i < resetGame.length; i++) {
+            resetGame[i].style.display = 'block'};
     }
+}
     
     
+//function to reset the game
 
-    
+for (let i= 0; i < resetGame.length; i++) {
+    resetGame[i].addEventListener('click', function() {
+        console.log('clicked')
+        toResetTheGame()
+    })
+    }
+
+function toResetTheGame() {
+console.log('reset game') 
+winContainer.style.display = 'none';
+loseContainer.style.display = 'none';
+for (let i= 0; i < resetGame.length; i++) {
+    resetGame[i].style.display = 'none';
+}
+gameContainer.style.display = 'flex'   
+}
