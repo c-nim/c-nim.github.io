@@ -35,138 +35,139 @@
     <div class="heading-banner">
         <h1>Common CSS Properties</h1>
     </div>
-    <div class="table-container">
-        <table class="table-contents">
-            <thead>
-                <tr>
-                    <th colspan="2">BACKGROUND</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th class="column-1">Background-image</th>
-                    <td><span class="code-font">background-image: url("imageofcat.jpg")</span><br>Use this to set a background image with the url leading to the image.</td>
-                </tr>
-                <tr>
-                    <th>Background-color</th>
-                    <td><span class="code-font">background-color: blue;</span><br>This will set the colour in the background behind text or other elements.</td>
-                </tr>
-                <tr>
-                    <th>Linear gradient</th>
-                    <td><span class="code-font">background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));</span><br> This will set a gradient with the two colours specified.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div><div class="table-container">
-        <table class="table-contents">
-            <thead >
-                <tr>
-                    <th colspan="2">BOX MODEL</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th rowspan= "4" class="column-1">Padding</th>
-                    <td><span class="code-font">padding: 10px;</span><br>sets 10px padding all around content.</td>
-                </tr>
-                <tr>
-                    <td><span class="code-font">padding: 10px 20px;</span><br>sets 10px padding top and bottom and 20px left and right.</td>
-                </tr>
-                <tr>                    
-                    <td><span class="code-font">padding: 10px 20px 30px;</span><br>sets 10px top, 20px left and right, 30px bottom.</td>
-                </tr>
-                <tr>
-                    <td><span class="code-font">padding: 10px 20px 30px 40px;</span><br>sets 10px top, 20px right, 30px bottom, 40px left.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div><div class="table-container">
-        <table class="table-contents">
-            <thead>
-                <tr>
-                    <th colspan="2">DISPLAY AND POSITIONING</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th class="column-1">vertical-align</th>
-                    <td><span class="code-font">vertical-align: top;</span><br>lines up divs with different hights to the top of the container.</td>
-                </tr>
-                <tr>
-                    <th>z-index</th>
-                    <td><span class="code-font">z-index: 1;</span><br><span class="code-font">z-index: -1;</span><br>z-index determines what order elements are shown when they overlap eahother.<br>The element with a lower z-index with be layered to the back whereas a higher z-index will be overlapping to the front.</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    </div><div class="table-container">
-        <table class="table-contents">
-            <thead>
-                <tr>
-                    <th colspan="2">COLOR</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th class="column-1">alpha</th>
-                    <td><span class="code-font">color: rgba(0, 255, 0, 0.5);</span> 0r <span class="code-font">hsla(34, 100%, 50%, 0.1);</span> <br>Adding an alpha value to rgb or hsl determines the opacity or the color.</td>
-                </tr>
-                <tr>
-                    <th>hsl(hue, saturation, lightness)</th>
-                    <td><span class="code-font">color: hsl(120, 30%, 40%)</span><br>Hue is a number from 0-360 and determines the color<br>Saturation is shown as a percentage(%), this is how intense the colour is.<br>Lightness is also shown as a percentage(%).</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-    </div><div class="table-container">
-        <table class="table-contents">
-            <thead>
-                <tr>
-                    <th colspan="2">LINKS AND BUTTONS</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th class="column-1">Pseudo-Class</th>
-                    <td><span class="code-font">link:<br>hover:<br>active:<br>visited:</span><br>Links have these four states 'not clicked', 'hovered over', 'clicked','visited'.</td>
-                </tr>
-                <tr>
-                    <th>Showing links</th>
-                    <td><span class="code-font">a:hover {<br>text-decoration: underline }</span><br>This means when you hover over the link it becomes underlined.</td>
-                </tr>
-                <tr>
-                    <th>Button styling, flat and skeuomorphic</th>
-                    <td><span class="code-font">.answer:hover {<br>background-color: #C0D6DF; }<br>.answer:active {<br>color: #ffffff; }</span><br>This is an example of a flat button styling where color changes happen when hovering over a button and pressing it.<br>skeuomorphic styling gives a 3D appearance and changes to box-shadow and margin can give the appearance of the button moving down when being pressed.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div><div class="table-container">
-        <table class="table-contents">
-            <thead>
-                <tr>
-                    <th colspan="2">FLEXBOX</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th rowspan="3" class="column-1">Flex</th>
-                    <td><span class="code-font">div {<br>display: flex; }</span><br>Makes an element a flex container, that is full width of its parent. <br>Items contained within this container are called flex items. The size and position of the flex items change in response to changing the size and position of the flex container.</td>
-                </tr>
-                <tr>
-                    <td><span class="code-font">div {<br>display: flex;<br>justify-content: center; }</span><br>This changes the distribution of space around the content. this is for when the content does not fill all the available space horizontally.<br><span class="code-font">center<br>flex-start<br>flex-end<br>space-between<br>space-around</span><br>are all values of justify-content.</td>
-                </tr>
-                <tr>
-                    <td><span class="code-font"></span><br></td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="contains-tables">
+        <div class="table-container">
+            <table class="table-contents">
+                <thead>
+                    <tr>
+                        <th colspan="2">BACKGROUND</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="column-1">Background-image</th>
+                        <td><span class="code-font">background-image: url("imageofcat.jpg")</span><br>Use this to set a background image with the url leading to the image.</td>
+                    </tr>
+                    <tr>
+                        <th>Background-color</th>
+                        <td><span class="code-font">background-color: blue;</span><br>This will set the colour in the background behind text or other elements.</td>
+                    </tr>
+                    <tr>
+                        <th>Linear gradient</th>
+                        <td><span class="code-font">background: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));</span><br> This will set a gradient with the two colours specified.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><div class="table-container">
+            <table class="table-contents">
+                <thead >
+                    <tr>
+                        <th colspan="2">BOX MODEL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan= "4" class="column-1">Padding</th>
+                        <td><span class="code-font">padding: 10px;</span><br>sets 10px padding all around content.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code-font">padding: 10px 20px;</span><br>sets 10px padding top and bottom and 20px left and right.</td>
+                    </tr>
+                    <tr>                    
+                        <td><span class="code-font">padding: 10px 20px 30px;</span><br>sets 10px top, 20px left and right, 30px bottom.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code-font">padding: 10px 20px 30px 40px;</span><br>sets 10px top, 20px right, 30px bottom, 40px left.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><div class="table-container">
+            <table class="table-contents">
+                <thead>
+                    <tr>
+                        <th colspan="2">DISPLAY AND POSITIONING</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="column-1">vertical-align</th>
+                        <td><span class="code-font">vertical-align: top;</span><br>lines up divs with different hights to the top of the container.</td>
+                    </tr>
+                    <tr>
+                        <th>z-index</th>
+                        <td><span class="code-font">z-index: 1;</span><br><span class="code-font">z-index: -1;</span><br>z-index determines what order elements are shown when they overlap eahother.<br>The element with a lower z-index with be layered to the back whereas a higher z-index will be overlapping to the front.</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><div class="table-container">
+            <table class="table-contents">
+                <thead>
+                    <tr>
+                        <th colspan="2">COLOR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="column-1">alpha</th>
+                        <td><span class="code-font">color: rgba(0, 255, 0, 0.5);</span> 0r <span class="code-font">hsla(34, 100%, 50%, 0.1);</span> <br>Adding an alpha value to rgb or hsl determines the opacity or the color.</td>
+                    </tr>
+                    <tr>
+                        <th>hsl(hue, saturation, lightness)</th>
+                        <td><span class="code-font">color: hsl(120, 30%, 40%)</span><br>Hue is a number from 0-360 and determines the color<br>Saturation is shown as a percentage(%), this is how intense the colour is.<br>Lightness is also shown as a percentage(%).</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><div class="table-container">
+            <table class="table-contents">
+                <thead>
+                    <tr>
+                        <th colspan="2">LINKS AND BUTTONS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="column-1">Pseudo-Class</th>
+                        <td><span class="code-font">link:<br>hover:<br>active:<br>visited:</span><br>Links have these four states 'not clicked', 'hovered over', 'clicked','visited'.</td>
+                    </tr>
+                    <tr>
+                        <th>Showing links</th>
+                        <td><span class="code-font">a:hover {<br>text-decoration: underline }</span><br>This means when you hover over the link it becomes underlined.</td>
+                    </tr>
+                    <tr>
+                        <th>Button styling, flat and skeuomorphic</th>
+                        <td><span class="code-font">.answer:hover {<br>background-color: #C0D6DF; }<br>.answer:active {<br>color: #ffffff; }</span><br>This is an example of a flat button styling where color changes happen when hovering over a button and pressing it.<br>skeuomorphic styling gives a 3D appearance and changes to box-shadow and margin can give the appearance of the button moving down when being pressed.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><div class="table-container">
+            <table class="table-contents">
+                <thead>
+                    <tr>
+                        <th colspan="2">FLEXBOX</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="3" class="column-1">Flex</th>
+                        <td><span class="code-font">div {<br>display: flex; }</span><br>Makes an element a flex container, that is full width of its parent. <br>Items contained within this container are called flex items. The size and position of the flex items change in response to changing the size and position of the flex container.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code-font">div {<br>display: flex;<br>justify-content: center; }</span><br>This changes the distribution of space around the content. this is for when the content does not fill all the available space horizontally.<br><span class="code-font">center<br>flex-start<br>flex-end<br>space-between<br>space-around</span><br>are all values of justify-content.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code-font"></span><br></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-
 </body>
 </html>

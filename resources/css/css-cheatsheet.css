@@ -1,14 +1,33 @@
+body {
+    margin: 0;
+}
+
 .heading-banner {
     text-align:center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: linear-gradient(rgba(238, 140, 229, 0.5),rgba(248, 244, 244,0.5));
     padding: 15px;
+    width: 100%;
+}
+
+.contains-tables {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
 }
 
 .table-container {
-    width: 50%;
-    display: inline-block;
+    width: 45%;
+    height: auto;
     vertical-align: top;
+}
+
+@media only screen and (max-width: 683px) {
+    .table-container {
+        width: 100%;
+    }
 }
 
 .table-contents {
