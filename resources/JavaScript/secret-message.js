@@ -107,6 +107,7 @@ resetButton.addEventListener('click', reset)
     let gameContainer = document.getElementById('game-container')
     let winContainer = document.getElementById('win-container')
     let loseContainer = document.getElementById('lose-container')
+    let drawContainer = document.getElementById('draw-container')
     let resetGame = document.getElementsByClassName('reset-game-button')
     let displayResults = document.getElementsByClassName('display-results')
 
@@ -151,7 +152,7 @@ resetButton.addEventListener('click', reset)
         let compResult = getCompResult()
         let gameResult = getGameResult(compResult);
         gameContainer.style.display = 'none';
-        if (gameResult === 'win' || gameResult === 'draw') {
+        if (gameResult === 'win') {
             winContainer.style.display = 'flex';
             for (let i= 0; i < displayResults.length; i++) {
                 console.log('P is working');
@@ -161,7 +162,18 @@ resetButton.addEventListener('click', reset)
                 resetGame[i].style.display = 'block'
             }
             //resetGame.style.display = 'block';
-        } else { loseContainer.style.display = 'flex';
+        } else if (gameResult === 'draw'){
+            drawContainer.style.display = 'flex';
+            for (let i= 0; i < displayResults.length; i++) {
+                console.log('P is working');
+                displayResults[i].innerHTML = `You played ${playerResult} and the computer played ${compResult}.`;
+            };
+            for (let i= 0; i < resetGame.length; i++) {
+                resetGame[i].style.display = 'block'
+            }
+
+        }
+        else { loseContainer.style.display = 'flex';
             for (let i= 0; i < resetGame.length; i++) {
             resetGame[i].style.display = 'block'};
             for (let i= 0; i < displayResults.length; i++) {
@@ -185,6 +197,7 @@ function toResetTheGame() {
 console.log('reset game') 
 winContainer.style.display = 'none';
 loseContainer.style.display = 'none';
+drawContainer.style.display = 'none';
 for (let i= 0; i < resetGame.length; i++) {
     resetGame[i].style.display = 'none';
 }
