@@ -112,10 +112,6 @@ p {
     flex-direction: column;
 }
 
-.about-heading {
-    
-}
-
 .about-paragraph {
     width: 60%;
 }
@@ -162,6 +158,7 @@ p {
 .mid {
     background-color: black;
 }
+
 .mid-heading {
     font-size: 3rem;
     text-align: center;
