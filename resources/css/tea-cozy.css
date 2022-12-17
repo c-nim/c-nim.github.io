@@ -142,12 +142,14 @@ body {
 
 .locations-container {
     background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*1nf9uaw*_ga*OTYyNzE5MTYwMi4xNjY1Njc0NDU0*_ga_3LRZM6TM9L*MTY2OTczMDU3OS45MC4xLjE2Njk3MzQzOTcuMC4wLjA.);
-    height: 500px;
+    height: auto;
+    min-height: 500px;
     width: 100%;
-    margin:auto;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .location-info {
